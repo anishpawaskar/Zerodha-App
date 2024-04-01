@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zerodha</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo-main" src="/assets/logo-main.svg" alt="zerodha logo" />
+      <ul class="nav-list">
+        <li class="nav-list__item">Signup</li>
+        <li class="nav-list__item">About</li>
+        <li class="nav-list__item">Products</li>
+        <li class="nav-list__item">Pricing</li>
+        <li class="nav-list__item">Support</li>
+        <li id="hamburger" class="nav-list__item">
+          <img class="hamburger-btn" width="30" src="/assets/hamburger.svg" />
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <img class="hero-img" src="/assets/hero-img.png" alt="chart" />
+      <div class="heading-box">
+        <h1 class="heading-main">Invest in everything</h1>
+        <p class="heading-sub">
+          Online platform to invest in stocks, derivatives, mutual funds, and
+          more
+        </p>
+      </div>
+      <button class="signup-btn">Sign up now</button>
+    </header>
+    <section>
+      <h2 class="portfolio-calulator-heading">Portfolio returns calculator</h2>
+      <div class="portfolio-calculator">
+        <div class="calculator-values-wrapper">
+          <ul class="calculator-values-list">
+            <li class="calculator-values-list__item">
+              <input type="text" placeholder="Capital" />
+            </li>
+            <li class="calculator-values-list__item">
+              <input type="text" placeholder="Years" />
+            </li>
+            <li class="calculator-values-list__item">
+              <input type="text" placeholder="Interest" />
+            </li>
+          </ul>
+          <div class="calculated-value">
+            <p>Total amount</p>
+            <p class="value">400000</p>
+          </div>
+        </div>
+        <button id="calculate-btn" class="calculate-btn">Calculate</button>
+      </div>
+    </section>
+  </body>
+</html>
