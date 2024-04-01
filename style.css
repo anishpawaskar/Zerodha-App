@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 1px 2px #eee;
+  padding: 0 7.7%;
+}
+
+.logo-main {
+  height: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list__item {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  width: 30px;
+}
+
+header {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 7.7%;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.heading-box {
+  width: 100%;
+  text-align: center;
+}
+
+.heading-main {
+  font-size: 2.75rem;
+  line-height: 1.25;
+  color: #424242;
+  font-weight: 500;
+}
+
+.heading-sub {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.signup-btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  background: #387ed1;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+section {
+  margin: 3rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 500px;
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+.portfolio-calulator-heading {
+  font-weight: 500;
+}
+
+.portfolio-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calculator-values-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.calculator-values-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calculator-values-list__item > input {
+  width: 200px;
+  height: 34px;
+  padding: 2px 4px;
+}
+
+.calculate-btn {
+  padding: 12px 0;
+  background: #387ed1;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.calculated-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.value {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 960px) {
+  nav {
+    padding: 0 5%;
+  }
+
+  .logo-main {
+    height: 15px;
+  }
+
+  .nav-list__item {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .hamburger-btn {
+    width: 27px;
+  }
+
+  header {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  section {
+    width: 310px;
+  }
+
+  .portfolio-calulator-heading {
+    font-size: 22px;
+  }
+
+  .calculator-values-list__item > input {
+    width: 135px;
+  }
+}
